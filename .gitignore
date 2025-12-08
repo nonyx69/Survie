@@ -1,86 +1,68 @@
-# =====================================
-# Unity generated folders
-# =====================================
+# ============================================
+# Unity 6.2 - .gitignore officiel et optimisé
+# ============================================
+
+# --- Unity généré automatiquement ---
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
 [Bb]uild/
 [Bb]uilds/
 [Ll]ogs/
-[Mm]emoryCaptures/
 UserSettings/
 
-# Crash reports
+# --- Crash Reports et autres fichiers système ---
+MemoryCaptures/
+*.stacktrace
 sysinfo.txt
 
-# =====================================
-# Visual Studio / Rider
-# =====================================
+# --- Packages et cache ---
+Packages/com.unity.package-manager.cache/
+# Garder le manifest pour les dépendances
+!Packages/manifest.json
+!Packages/packages-lock.json
+
+# --- Cache d’asset ---
+*.pidb
+*.suo
+*.user
+*.userprefs
 *.csproj
 *.unityproj
 *.sln
-*.suo
-*.tmp
-*.user
-*.userprefs
-*.pidb
-*.booproj
-*.svd
-*.pdb
-
-# JetBrains Rider
-.idea/
-*.sln.iml
-
-# =====================================
-# OS files
-# =====================================
-# Windows
-Thumbs.db
-Desktop.ini
-
-# macOS
-.DS_Store
-
-# =====================================
-# Unity assets auto-generated
-# =====================================
-*.pidb.meta
-*.pdb.meta
-*.mdb.meta
-
-# =====================================
-# Builds
-# =====================================
+*.dll
+*.exe
 *.apk
 *.aab
+*.app
+*.ipa
 *.xcodeproj
 *.xcworkspace
-*.xcuserstate
 
-# =====================================
-# Cache
-# =====================================
-Library/
-obj/
-Temp/
-Logs/
+# --- Visual Studio / Rider ---
+.vscode/
+.idea/
+*.DotSettings.user
 
-# =====================================
-# Unity Collaborate
-# =====================================
+# --- Logs / Profiler ---
+*.log
+*.tlog
+*.profiler
+
+# --- Collaboration et Cloud ---
+.terraform/
 .collabignore
+.collab/
+*.collabmeta
 
-# =====================================
-# Addressables
-# =====================================
-/Assets/AddressableAssetsData/*/*.bin*
-/Assets/AddressableAssetsData/*/*.json
+# --- Addressables ---
+/ServerData/
+/BuildServerData/
 
-# =====================================
-# Other
-# =====================================
-*.swp
-*.bak
-*.tmp
-*.orig
+# --- Autres fichiers temporaires ---
+.DS_Store
+Thumbs.db
+
+# --- TextMesh Pro ---
+[Tt]extMesh Pro/Fonts/Assets.meta
+[Tt]extMesh Pro/Fonts/Assets/
