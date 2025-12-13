@@ -1,6 +1,6 @@
-# ============================================
-# Unity 6.2 - .gitignore officiel et optimisé
-# ============================================
+# ==================================================
+# Unity 2022.3 LTS - .gitignore FINAL (stable & safe)
+# ==================================================
 
 # --- Unity généré automatiquement ---
 [Ll]ibrary/
@@ -9,60 +9,71 @@
 [Bb]uild/
 [Bb]uilds/
 [Ll]ogs/
-UserSettings/
+[Uu]serSettings/
 
-# --- Crash Reports et autres fichiers système ---
+# --- Cache Unity / GI / Shader ---
+**/Cache/
+GIcache/
+ShaderCache/
+
+# --- Crash Reports ---
 MemoryCaptures/
 *.stacktrace
 sysinfo.txt
 
-# --- Packages et cache ---
+# --- Addressables ---
+/ServerData/
+/BuildServerData/
+AddressableAssetsData/
+
+# --- Packages ---
 Packages/com.unity.package-manager.cache/
-# Garder le manifest pour les dépendances
 !Packages/manifest.json
 !Packages/packages-lock.json
 
-# --- Cache d’asset ---
-*.pidb
-*.suo
-*.user
-*.userprefs
-*.csproj
-*.unityproj
-*.sln
-*.dll
-*.exe
-*.apk
-*.aab
-*.app
-*.ipa
-*.xcodeproj
-*.xcworkspace
-
-# --- Visual Studio / Rider ---
+# --- IDE / Éditeurs ---
+.vs/
 .vscode/
 .idea/
 *.DotSettings.user
+*.sln.iml
+
+# --- Fichiers générés par IDE ---
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
 
 # --- Logs / Profiler ---
 *.log
 *.tlog
 *.profiler
 
-# --- Collaboration et Cloud ---
-.terraform/
+# --- Android / Gradle ---
+.gradle/
+local.properties
+
+# --- iOS / Xcode ---
+*.xcuserstate
+
+# --- Collaboration Unity ---
 .collabignore
 .collab/
 *.collabmeta
 
-# --- Addressables ---
-/ServerData/
-/BuildServerData/
+# --- Fichiers temporaires / backup ---
+*.bak
+*.tmp
+*.orig
 
-# --- Autres fichiers temporaires ---
+# --- OS ---
 .DS_Store
 Thumbs.db
 
-# --- TextMesh Pro ---
-[Tt]extMesh Pro/Fonts/Assets.meta
+# --- TextMesh Pro (ne pas ignorer les assets !) ---
 [Tt]extMesh Pro/Fonts/Assets/
+!**/*.meta
