@@ -11,6 +11,14 @@
 [Ll]ogs/
 [Uu]serSettings/
 
+# Unity asset folders to ignore
+Assets/TerrainSampleAssets/
+Assets/HDRPDefaultResources/
+Assets/FantasyEnvironments/
+Assets/CrackedTree/
+Assets/Fantasy Skybox FREE/
+Assets/ALP_Assets/
+
 # --- Cache Unity / GI / Shader ---
 **/Cache/
 GIcache/
